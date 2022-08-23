@@ -1,12 +1,15 @@
 {
-  "name": "part5",
+  "name": "typescript_snake",
+  "homepage": "https://ysl0628.github.io/typescript_snake",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open --mode development"
+    "start": "webpack serve --open --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +31,7 @@
     "webpack-dev-server": "^4.10.0"
   },
   "dependencies": {
-    "autoprefixer": "10.4.5"
+    "autoprefixer": "10.4.5",
+    "gh-pages": "^4.0.0"
   }
 }
